@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51c6d6c1-edc7-445e-bda1-00a07af8a8dc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/const.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/const.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/category.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/category.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/ToDo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/ToDo.ts" afterDir="false" />
-    </list>
+    <list default="true" id="51c6d6c1-edc7-445e-bda1-00a07af8a8dc" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +84,7 @@
       <workItem from="1607865145437" duration="3514000" />
       <workItem from="1607892781298" duration="1337000" />
       <workItem from="1607894136154" duration="5921000" />
-      <workItem from="1607900701326" duration="475000" />
+      <workItem from="1607900701326" duration="826000" />
     </task>
     <servers />
   </component>
