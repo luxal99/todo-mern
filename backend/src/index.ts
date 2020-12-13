@@ -1,12 +1,10 @@
 import "reflect-metadata";
 import express = require("express");
-import {createConnection, getMongoManager} from "typeorm";
-import {Category} from "./models/Category";
-import {ToDo} from "./models/ToDo";
-import {Response, Request} from "express";
+import {createConnection} from "typeorm";
 import bodyParser = require("body-parser");
 import {CategoryController} from "./controllers/category.controller";
-import {PORT} from "./constants/const";
+import {ENTITIES, PORT} from "./constants/const";
+import {ToDoController} from "./controllers/to-do.controller";
 
 const cors = require('cors');
 const app = express();
@@ -24,11 +22,12 @@ app.listen(PORT, async () => {
         useUnifiedTopology: true,
         port: 27017,
         database: "todos",
-        entities: [Category, ToDo],
+        entities: ENTITIES,
     }).catch((err) => {
         console.log(err)
     })
 
 })
 
-new CategoryController(app)
+new CategoryController(app);
+new ToDoController(app)

@@ -3,17 +3,13 @@ import {getMongoManager} from "typeorm";
 import {Category} from "../models/Category";
 import {Response, Request} from "express";
 import {CATEGORY_ROUTE} from "../constants/const";
+import {GenericController} from "./generic.controller";
 
-export class CategoryController {
-
-    protected app: any = null;
-
+export class CategoryController extends GenericController {
     constructor(app) {
-        this.app = app;
-        this.routes();
+        super(app);
     }
-
-    protected routes() {
+    routes() {
 
         this.app.get(CATEGORY_ROUTE, async (req, res) => {
             try {

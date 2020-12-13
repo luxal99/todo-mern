@@ -11,6 +11,11 @@ export class ToDo {
     title: string;
 
     @Column(type => Category)
-    category: Category[];
+    category: Category;
 
+
+    constructor(title: string, category: Category) {
+        this.title = title;
+        this.category = category;
+    }
 }
