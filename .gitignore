@@ -1,2 +1,6 @@
 node_modules/
 react-basic
+
+backend/.idea/
+
+backend/dist/
