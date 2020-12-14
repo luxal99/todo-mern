@@ -19,6 +19,15 @@ export class ToDoController extends GenericController {
             }
         });
 
+        this.app.delete(TO_DO_ROUTE,async (req:Request,res:Response)=>{
+            try{
+                await new ToDoService().delete(req.query.id).then(()=>{
+                    res.sendStatus(200)
+                });
+            }catch (e){
+                res.send({err:e})
+            }
+        })
         this.app.post(TO_DO_ROUTE, async (req: Request, res: Response) => {
             try {
                 await new ToDoService().save(req.body.title, req.body.category).then(() => {

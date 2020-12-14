@@ -5,5 +5,15 @@
     display: inline-flex;
 }
 input {
-    margin-top: 1em;
+    margin-top: 1em !important;
+}
+.success-btn {
+    background-color: #fff !important;
+    margin: 1em !important;
+}
+.to-do-container {
+    padding: 5em 2em;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    margin-top: 5%;
 }

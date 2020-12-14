@@ -5,17 +5,17 @@ import {Category} from "./Category";
 export class ToDo {
 
     @ObjectIdColumn()
-    id: ObjectID;
+    id: string;
 
     @Column()
     title: string;
 
     @Column(type => Category)
-    category: Category;
+    idCategory: Category;
 
 
-    constructor(title: string, category: Category) {
+    constructor(title?: string, category?: Category) {
         this.title = title;
-        this.category = category;
+        this.idCategory = category;
     }
 }
