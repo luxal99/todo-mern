@@ -6,15 +6,16 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
-import './add-item-dialog.css'
 import axios from "axios";
 import {FormControl, InputLabel, MenuItem, Select} from "@material-ui/core";
+import {ToDo} from "../../../models/ToDo";
 
-type AddItemDialogProps = {
-    getTodos: any;
+type EditItemDialogProps = {
+    getTodos?: any;
+    toDoForUpdate?: ToDo
 }
 
-export class AddItemDialog extends React.Component<AddItemDialogProps> {
+export class EditItemDialog extends React.Component<EditItemDialogProps> {
 
     state = {
         open: false,
@@ -62,7 +63,7 @@ export class AddItemDialog extends React.Component<AddItemDialogProps> {
         return (
             <div>
                 <Button variant="contained" className="default-btn" onClick={this.handleClickOpen}>
-                    Open form dialog
+                    Edit
                 </Button>
                 <Dialog open={this.state.open} onClose={this.handleClose} aria-labelledby="form-dialog-title">
                     <DialogTitle id="form-dialog-title">Add ToDo</DialogTitle>
@@ -78,6 +79,7 @@ export class AddItemDialog extends React.Component<AddItemDialogProps> {
                                        type="text"
                                        label="To Do title"
                                        fullWidth
+                                       value={this.props.toDoForUpdate?.title}
                             />
                         </FormControl>
                         <FormControl fullWidth>

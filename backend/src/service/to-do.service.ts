@@ -27,4 +27,8 @@ export class ToDoService {
             await this.repository.delete(resp)
         })
     }
+
+    async update(todo: ToDo) {
+        await getMongoRepository(ToDo).update(todo.id, todo);
+    }
 }

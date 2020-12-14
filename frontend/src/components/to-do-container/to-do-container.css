@@ -15,5 +15,9 @@ input {
     padding: 5em 2em;
     border: 1px solid #eee;
     border-radius: 15px;
+    background-color: #ffffff;
     margin-top: 5%;
+    -webkit-box-shadow: 10px 10px 37px -24px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 37px -24px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 37px -24px rgba(0,0,0,0.75);
 }

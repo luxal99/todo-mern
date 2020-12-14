@@ -37,7 +37,7 @@ export class ToDoContainer extends React.Component {
                 </div>
                 <div className="container text-center">
                     {this.state.listOfToDos.map(todo =>
-                        <ToDoItem key={todo.id} onDelete={this.handleDelete} toDoItem={todo}/>)}
+                        <ToDoItem key={todo.id} getTodos={this.getTodos.bind(this)} onDelete={this.handleDelete} toDoItem={todo}/>)}
                 </div>
             </div>);
     }
