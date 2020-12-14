@@ -8,6 +8,7 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import './add-item-dialog.css'
 import axios from "axios";
+import {FormControl, InputLabel, MenuItem, Select} from "@material-ui/core";
 
 type AddItemDialogProps = {
     getTodos: any;
@@ -18,7 +19,9 @@ export class AddItemDialog extends React.Component<AddItemDialogProps> {
     state = {
         open: false,
         listOfToDos: [{id: '', title: ''}],
-        toDoInputValue: ''
+        toDoInputValue: '',
+        listOfCategories: [{id: '', title: ''}],
+        selectedValue: ''
     }
 
     handleClickOpen = () => {
@@ -30,9 +33,18 @@ export class AddItemDialog extends React.Component<AddItemDialogProps> {
         this.props.getTodos();
     };
 
+    componentDidMount() {
+        axios.get('http://localhost:8080/category').then(response => {
+            this.setState({listOfCategories: response.data})
+        })
+    }
 
     handleChange = (event: any) => {
         this.setState({toDoInputValue: event.target.value});
+    }
+
+    handleSelectChange = (event: any) => {
+        this.setState({selectedValue: event.target.value})
     }
 
 
@@ -40,7 +52,7 @@ export class AddItemDialog extends React.Component<AddItemDialogProps> {
         event.preventDefault();
         await axios.post('http://localhost:8080/todo', {
             title: this.state.toDoInputValue,
-            category: {id: '5fd69fc3e394b31aec5ec9c5'}
+            category: {title:this.state.selectedValue}
         }).then(() => {
             this.handleClose()
         })
@@ -48,25 +60,40 @@ export class AddItemDialog extends React.Component<AddItemDialogProps> {
 
     render() {
         return (
-            <div >
+            <div>
                 <Button variant="contained" className="default-btn" onClick={this.handleClickOpen}>
                     Open form dialog
                 </Button>
                 <Dialog open={this.state.open} onClose={this.handleClose} aria-labelledby="form-dialog-title">
-                    <DialogTitle id="form-dialog-title">Subscribe</DialogTitle>
+                    <DialogTitle id="form-dialog-title">Add ToDo</DialogTitle>
                     <DialogContent>
                         <DialogContentText>
-                            To subscribe to this website, please enter your email address here. We will send updates
-                            occasionally.
+                            Input some text to add new ToDo item
                         </DialogContentText>
-                        <TextField onChange={this.handleChange}
-                                   autoFocus
-                                   margin="dense"
-                                   id="name"
-                                   label="Email Address"
-                                   type="email"
-                                   fullWidth
-                        />
+
+                        <FormControl>
+                            <TextField onChange={this.handleChange}
+                                       autoFocus
+                                       id="name"
+                                       type="text"
+                                       label="To Do title"
+                                       fullWidth
+                            />
+                        </FormControl>
+                        <FormControl fullWidth>
+                            <InputLabel id="demo-simple-select-label">Age</InputLabel>
+                            <Select
+                                labelId="demo-simple-select-label"
+                                id="demo-simple-select"
+                                value={this.state.selectedValue}
+                                onChange={this.handleSelectChange}
+
+                            >
+
+                                {this.state.listOfCategories.map(category =>
+                                    <MenuItem key={category.id} value={category.title}>{category.title}</MenuItem>)}
+                            </Select>
+                        </FormControl>
                     </DialogContent>
                     <DialogActions>
                         <Button onClick={this.handleClose} color="primary">

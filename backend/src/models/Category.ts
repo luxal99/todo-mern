@@ -4,11 +4,10 @@ import {Column, Entity, ObjectID, ObjectIdColumn} from "typeorm";
 export class Category {
 
     @ObjectIdColumn()
-    id: ObjectID;
+    id: string;
 
     @Column()
     title: string;
-
 
     constructor(title?: string) {
         this.title = title;

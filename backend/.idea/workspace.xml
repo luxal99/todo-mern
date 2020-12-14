@@ -3,20 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="51c6d6c1-edc7-445e-bda1-00a07af8a8dc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/to-do.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/to-do.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/ToDo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/ToDo.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/to-do.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/to-do.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/category.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/category.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Category.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Category.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/category.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/category.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/navbar/navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/navbar/navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/to-do-container/to-do-container.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/to-do-container/to-do-container.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/to-do-container/to-do-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/to-do-container/to-do-container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/to-do-container/add-item-dialog/add-item-dialog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/to-do-container/add-item-dialog/add-item-dialog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/to-do-item/to-do-item.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/to-do-item/to-do-item.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/components/to-do-item/to-do-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/to-do-item/to-do-item.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +58,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.index.js">
     <configuration default="true" type="NodeJSConfigurationType" path-to-js-file="$PROJECT_DIR$/dist/index.js">
       <method v="2">
         <option name="NpmBeforeRunTask" enabled="true">
@@ -89,6 +85,20 @@
         </option>
       </method>
     </configuration>
+    <configuration name="dev_run" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev_run" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Node.js.index.js" />
+      <item itemvalue="npm.dev_run" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
