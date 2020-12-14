@@ -11,6 +11,14 @@ export class ToDoController extends GenericController {
 
 
     routes() {
+        this.app.get(TO_DO_ROUTE, async (req, res) => {
+            try {
+                res.send(await new ToDoService().getAll());
+            } catch (e) {
+                res.sendStatus(500)
+            }
+        });
+
         this.app.post(TO_DO_ROUTE, async (req: Request, res: Response) => {
             try {
                 await new ToDoService().save(req.body.title, req.body.category).then(() => {

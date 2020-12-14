@@ -1,0 +1,9 @@
+.container {
+    padding: 5em 2em;
+}
+.col-sm {
+    display: inline-flex;
+}
+input {
+    margin-top: 1em;
+}
