@@ -4,13 +4,12 @@
     <list default="true" id="5c95e273-b8f3-4707-98f5-536769f2546b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../backend/src/controllers/to-do.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/controllers/to-do.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/models/Category.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/models/Category.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/models/ToDo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/models/ToDo.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../backend/src/service/to-do.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/service/to-do.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/to-do-container/to-do-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/to-do-container/to-do-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/to-do-item/to-do-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/to-do-item/to-do-item.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +71,9 @@
       <workItem from="1607876072891" duration="991000" />
       <workItem from="1607892766301" duration="13000" />
       <workItem from="1607901540402" duration="2073000" />
-      <workItem from="1607903865262" duration="736000" />
+      <workItem from="1607903865262" duration="1436000" />
+      <workItem from="1607937177404" duration="5000" />
+      <workItem from="1607938483748" duration="954000" />
     </task>
     <servers />
   </component>
