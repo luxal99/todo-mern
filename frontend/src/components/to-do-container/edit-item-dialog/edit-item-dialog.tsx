@@ -38,6 +38,9 @@ export class EditItemDialog extends React.Component<EditItemDialogProps> {
         axios.get('http://localhost:8080/category').then(response => {
             this.setState({listOfCategories: response.data})
         })
+
+        this.setState({toDoInputValue:this.props.toDoForUpdate?.title})
+        this.setState({selectedValue:this.props.toDoForUpdate?.idCategory?.title})
     }
 
     handleChange = (event: any) => {
@@ -51,10 +54,11 @@ export class EditItemDialog extends React.Component<EditItemDialogProps> {
 
     handleSubmit = async (event: any) => {
         event.preventDefault();
-        await axios.post('http://localhost:8080/todo', {
+        await axios.put('http://localhost:8080/todo', {
+            id:this.props.toDoForUpdate?.id,
             title: this.state.toDoInputValue,
-            category: {title: this.state.selectedValue}
-        }).then(() => {
+            idCategory: {title: this.state.selectedValue}
+        }).then(resp=> {
             this.handleClose()
         })
     }
@@ -79,7 +83,7 @@ export class EditItemDialog extends React.Component<EditItemDialogProps> {
                                        type="text"
                                        label="To Do title"
                                        fullWidth
-                                       value={this.props.toDoForUpdate?.title}
+                                       value={this.state.toDoInputValue}
                             />
                         </FormControl>
                         <FormControl fullWidth>

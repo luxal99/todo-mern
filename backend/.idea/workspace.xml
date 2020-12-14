@@ -3,17 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="51c6d6c1-edc7-445e-bda1-00a07af8a8dc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/to-do.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/to-do.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/to-do.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/to-do.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/navbar/navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/navbar/navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/to-do-container/add-item-dialog/add-item-dialog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/to-do-container/add-item-dialog/add-item-dialog.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/to-do-container/to-do-container.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/to-do-container/to-do-container.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/to-do-container/to-do-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/to-do-container/to-do-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/to-do-item/to-do-item.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/to-do-item/to-do-item.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/components/to-do-item/to-do-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/to-do-item/to-do-item.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/to-do-container/edit-item-dialog/edit-item-dialog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/to-do-container/edit-item-dialog/edit-item-dialog.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
